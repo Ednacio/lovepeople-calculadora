@@ -1,6 +1,6 @@
 # app_calculadora
 
-A new Flutter project.
+Projeto realizado no curso Lovepeople
 
 ## Getting Started
 
