@@ -1,4 +1,3 @@
-import 'package:app_calculadora/controller/calc_pressed_controller.dart';
 import 'package:flutter/material.dart';
 
 class CalcButton extends StatelessWidget {
@@ -6,12 +5,15 @@ class CalcButton extends StatelessWidget {
   final ShapeBorder? shape;
   final TextStyle? style;
   final SizedBox? sizedBox;
+  final void Function(String) cb;
+
   const CalcButton({
     Key? key,
     required this.text,
     this.shape,
     this.style,
     this.sizedBox,
+    required this.cb,
   }) : super(key: key);
 
   @override
@@ -23,9 +25,7 @@ class CalcButton extends StatelessWidget {
             width: 66,
             height: 66,
             child: FloatingActionButton(
-              onPressed: () {
-                print(text);
-              },
+              onPressed: () => cb(text),
               shape: shape ??
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50),

@@ -1,10 +1,9 @@
-import 'package:app_calculadora/view/calc_button.dart';
+import 'package:app_calculadora/components/calc_button.dart';
 import 'package:flutter/material.dart';
 
 class CalcButtons extends StatelessWidget {
-  const CalcButtons({
-    Key? key,
-  }) : super(key: key);
+  final void Function(String) cb;
+  CalcButtons(this.cb);
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +14,7 @@ class CalcButtons extends StatelessWidget {
           children: <Widget>[
             CalcButton(
               text: 'C',
+              cb: cb,
               style: TextStyle(
                 fontSize: 28,
                 color: Colors.red,
@@ -22,6 +22,7 @@ class CalcButtons extends StatelessWidget {
             ),
             CalcButton(
               text: '⌫',
+              cb: cb,
               style: TextStyle(
                 fontSize: 28,
                 color: Colors.amber,
@@ -29,9 +30,11 @@ class CalcButtons extends StatelessWidget {
             ),
             CalcButton(
               text: '.',
+              cb: cb,
             ),
             CalcButton(
               text: '÷',
+              cb: cb,
             ),
           ],
         ),
@@ -40,15 +43,19 @@ class CalcButtons extends StatelessWidget {
           children: <Widget>[
             CalcButton(
               text: '9',
+              cb: cb,
             ),
             CalcButton(
               text: '8',
+              cb: cb,
             ),
             CalcButton(
               text: '7',
+              cb: cb,
             ),
             CalcButton(
               text: 'x',
+              cb: cb,
             ),
           ],
         ),
@@ -57,15 +64,19 @@ class CalcButtons extends StatelessWidget {
           children: <Widget>[
             CalcButton(
               text: '4',
+              cb: cb,
             ),
             CalcButton(
               text: '5',
+              cb: cb,
             ),
             CalcButton(
               text: '6',
+              cb: cb,
             ),
             CalcButton(
               text: '-',
+              cb: cb,
             ),
           ],
         ),
@@ -74,15 +85,19 @@ class CalcButtons extends StatelessWidget {
           children: <Widget>[
             CalcButton(
               text: '1',
+              cb: cb,
             ),
             CalcButton(
               text: '2',
+              cb: cb,
             ),
             CalcButton(
               text: '3',
+              cb: cb,
             ),
             CalcButton(
               text: '+',
+              cb: cb,
             ),
           ],
         ),
@@ -91,13 +106,16 @@ class CalcButtons extends StatelessWidget {
             Expanded(
               child: CalcButton(
                 text: '0',
+                cb: cb,
               ),
             ),
             CalcButton(
               text: ',',
+              cb: cb,
             ),
             CalcButton(
               text: '=',
+              cb: cb,
             ),
           ],
         ),
