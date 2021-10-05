@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
-                CalcDisplay(calcMemory.value),
+                CalcDisplay(calcMemory.result, calcMemory.equation),
                 CalcButtons(_onPressed),
               ],
             ),

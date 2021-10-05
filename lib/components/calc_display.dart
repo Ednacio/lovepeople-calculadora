@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 
 class CalcDisplay extends StatelessWidget {
   final String? text;
-  CalcDisplay(this.text);
+  final String? equation;
+  CalcDisplay(this.text, this.equation);
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +17,22 @@ class CalcDisplay extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: AutoSizeText(
+                equation!,
+                minFontSize: 18,
+                maxFontSize: 40,
+                maxLines: 1,
+                textAlign: TextAlign.end,
+                style: TextStyle(
+                  fontWeight: FontWeight.w100,
+                  decoration: TextDecoration.none,
+                  fontSize: 40,
+                  color: Colors.white,
+                ),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: AutoSizeText(
