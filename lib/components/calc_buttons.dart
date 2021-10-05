@@ -17,7 +17,7 @@ class CalcButtons extends StatelessWidget {
               cb: cb,
               style: TextStyle(
                 fontSize: 28,
-                color: Colors.red,
+                color: Colors.brown,
               ),
             ),
             CalcButton(
