@@ -24,8 +24,8 @@ class CalcButtons extends StatelessWidget {
               text: '⌫',
               cb: cb,
               style: TextStyle(
-                fontSize: 28,
-                color: Colors.amber,
+                fontSize: 39,
+                color: Colors.amberAccent,
               ),
             ),
             CalcButton(
@@ -34,6 +34,10 @@ class CalcButtons extends StatelessWidget {
             ),
             CalcButton(
               text: '÷',
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.greenAccent,
+              ),
               cb: cb,
             ),
           ],
@@ -55,6 +59,10 @@ class CalcButtons extends StatelessWidget {
             ),
             CalcButton(
               text: 'x',
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.greenAccent,
+              ),
               cb: cb,
             ),
           ],
@@ -76,6 +84,10 @@ class CalcButtons extends StatelessWidget {
             ),
             CalcButton(
               text: '-',
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.greenAccent,
+              ),
               cb: cb,
             ),
           ],
@@ -97,6 +109,10 @@ class CalcButtons extends StatelessWidget {
             ),
             CalcButton(
               text: '+',
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.greenAccent,
+              ),
               cb: cb,
             ),
           ],
@@ -114,9 +130,15 @@ class CalcButtons extends StatelessWidget {
               text: ',',
               cb: cb,
             ),
-            CalcButton(
-              text: '=',
-              cb: cb,
+            Expanded(
+              child: CalcButton(
+                text: '=',
+                style: TextStyle(
+                  fontSize: 50,
+                  color: Colors.greenAccent,
+                ),
+                cb: cb,
+              ),
             ),
           ],
         ),

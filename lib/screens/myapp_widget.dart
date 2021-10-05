@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         title: 'Calc',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.cyan,
         ),
         debugShowCheckedModeBanner: false,
         home: Scaffold(

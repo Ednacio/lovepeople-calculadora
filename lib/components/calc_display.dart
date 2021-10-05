@@ -12,7 +12,7 @@ class CalcDisplay extends StatelessWidget {
     return Expanded(
       flex: 1,
       child: Container(
-        color: Colors.blue,
+        color: Colors.cyan,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.stretch,
